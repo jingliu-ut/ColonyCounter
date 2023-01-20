@@ -82,7 +82,6 @@ def analyze(file):
     plt.plot(coordinates[:, 1], coordinates[:, 0], 'r.', markersize=2, alpha=0.3)
     plt.savefig(output_dir + '/' + image_name + ' results.png',
                 bbox_inches='tight', pad_inches=0)
-    plt.show()
 
     output_dict['Name'].append(image_name)
     output_dict['Count'].append(len(coordinates))
