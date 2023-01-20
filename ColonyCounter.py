@@ -73,15 +73,15 @@ def analyze(file):
     #Plotting
     plt.rcParams["figure.dpi"] = 150
     plt.gca().set_axis_off()
-    plt.subplots_adjust(top = 1, bottom = 0, right = 1, left = 0,
-                        hspace = 0, wspace = 0)
+    plt.subplots_adjust(top=1, bottom=0, right=1, left=0,
+                        hspace=0, wspace=0)
     plt.margins(0,0)
     plt.gca().xaxis.set_major_locator(plt.NullLocator())
     plt.gca().yaxis.set_major_locator(plt.NullLocator())
     plt.imshow(colony_img_raw, cmap='gray')
     plt.plot(coordinates[:, 1], coordinates[:, 0], 'r.', markersize=2, alpha=0.3)
     plt.savefig(output_dir + '/' + image_name + ' results.png',
-                bbox_inches = 'tight', pad_inches = 0)
+                bbox_inches='tight', pad_inches=0)
     plt.show()
 
     output_dict['Name'].append(image_name)
@@ -99,8 +99,8 @@ def top_hat_recon(img, colony_size):
     :param colony_size: size of colony
     :return: transformed_img: 2d array
     '''
-    # footprint specifies the colony size
-    top_hat = white_tophat(img, footprint=disk(colony_size))
+    # selem specifies the colony size
+    top_hat = white_tophat(img, selem=disk(colony_size))
     top_hat_float = img_as_float(top_hat.copy())
     seed = np.copy(top_hat_float)
     seed[1:-1, 1:-1] = top_hat_float.min()
