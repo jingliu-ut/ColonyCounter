@@ -122,6 +122,7 @@ def main():
     print(f"Saving outputs to Output.csv")
     output_data = pd.DataFrame(output_dict)
     output_data.to_csv(os.path.join(output_dir, "Output.csv"), index=False)
+    print("Saved")
 
 
 if __name__ == '__main__':
