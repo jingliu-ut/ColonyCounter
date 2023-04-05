@@ -12,7 +12,11 @@ ColonyCounter runs on Python 3.6 and higher and requires the following packages:
 - pandas
 
 To install ColonyCounter using Anaconda, git clone or download and unzip the 
-ColonyCounter code. From the ColonyCounter directory, create the environment 
+ColonyCounter code.
+
+`https://github.com/jingliu-ut/ColonyCounter.git`
+
+From the ColonyCounter directory, create the environment 
 and activate the environment.
 
 `conda create -n ColonyCounter python=3.6 numpy scikit-image pandas`
