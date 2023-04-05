@@ -29,7 +29,7 @@ To run ColonyCounter, you need to put your plate images (.tif) in the
 `Inputs` folder. Then from the ColonyCounter directory, run the code using 
 ```
 python ColonyCounter.py
-```.
+```
 
 The output of ColonyCounter will be written to the `Outputs` subfolder. This 
 folder will contain all the analyzed images (.png) and the results in a CSV 
