@@ -1,4 +1,5 @@
 # ColonyCounter
+[![DOI](https://zenodo.org/badge/590585896.svg)](https://zenodo.org/badge/latestdoi/590585896)
 
 ColonyCounter is an image analysis pipeline for counter bacterial and yeast 
 colonies on agar plates. This pipeline will count the number of colonies and 
