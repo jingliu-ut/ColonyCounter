@@ -5,6 +5,9 @@ ColonyCounter is an image analysis pipeline for counter bacterial and yeast
 colonies on agar plates. This pipeline will count the number of colonies and 
 mark them on the agar plate image.
 
+## Acknowledgement
+The original code is generously provided by Ernest Iu from Sergey Plotnikov Lab at the University of Toronto. 
+
 ## Installation
 
 ColonyCounter runs on Python 3.6 and higher and requires the following packages:
